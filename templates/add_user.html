@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Добавить пользователя</h1>
+  <form method="post">
+    <label for="title">Адрес электронной почты</label><br>
+    <input type="text" id="title" name="title"><br>
+    <label for="content">Номер телефона</label><br>
+    <input type="text" id="content" name="content"><br>
+    
+    <label for="E-Mail">Почта</label>
+    <input type="checkbox" name="E-Mail" id="E-Mail" disabled checked>
+    <label for="Phone">Телефон</label>
+    <input type="checkbox" name="Phone" id="Phone" disabled><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <h2>Памятка регистрации пользователей через терминал(если не работает UI): </h2>
+  <p>-Открыть терминал</p>
+  <p>Ввести команду:<br>curl -X POST http://127.0.0.1:5000/register -H "Content-Type: application/json" -d '{"email": <b>Почта, в кавычках</b>, "phone": <b>88005553535</b>, "notify_via_email": true, "notify_via_sms": false}'</p>
+  <p></p>
+  <a href="{{ url_for('index') }}">  <button>Домой</button></a>
+{% endblock %}

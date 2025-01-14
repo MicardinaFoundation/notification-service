@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div id = "wrap" >
+        <header>
+            <div>
+                <a href="{{ url_for('index') }}" class="logo-style">
+                    <img src="{{ url_for('static', filename='style.css') }}" alt="Main page">
+                </a>
+            </div>
+        </header>
+        <main class="display-center-bb">
+            <div class="background-imagines">
+                
+            </div>
+            {% block content %}{% endblock %}
+        </main>    
+    </div>
+    <footer>
+        <p>@2025, byMsk</p>
+        
+    </footer>
+  </body>
+</html>

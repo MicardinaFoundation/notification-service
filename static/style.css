@@ -1,0 +1,103 @@
+html,
+body {
+  height: 100%;
+}
+#wrap {
+  min-height: 100%;
+}
+main {
+  padding-bottom: 100px;
+  /*Высота футера*/
+}
+footer {
+  margin-top: -100px;
+  /*Минус Высота футера*/
+  height: 100px;
+  /*Высота футера*/
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+    color: beige;
+    background-color: rgb(54, 54, 54);
+
+}
+
+button {
+  background-color: burlywood;
+  border: 1px #202020 ;
+  margin: 15px 5px;
+  padding: 5px 10px;
+  border-style:dashed;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #613f00;
+  color: #cccccc;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+thead {
+  background-color: rgb(110, 110, 110);
+}
+
+header {
+  margin-bottom: 50px;
+  background-color: black;
+  height: 50px;
+}
+
+footer {
+  /* margin-top: 80px; */
+  border-top: 1px solid #666;
+  padding: 0 15px 13%;
+  background-color: black;
+  
+}
+
+.background-imagines {
+  /* display: block;
+  width: auto;
+  background-position: 0%;
+  background-image: url(l1eep7q3vuq91.jpg);;
+  height: 1080px; */
+
+}
+
+.display-center-bb {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.version-block {
+  color: black;
+  padding: 15px 25px;
+  background-color: rgb(31, 209, 31);
+  margin: 25px 15px;
+  border: 3px rgb(255, 255, 255);
+  border-radius: 15px;
+  border-style: dotted;
+}
+
+.logo-style {
+  width: 50px;
+  height: 50px;
+  background-color: #613f00;
+  display: block;
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Отправить сообщение</h1>
+  <form method="post">
+    <label for="title">Адрес электронной почты</label><br>
+    <input type="text" id="title" name="title"><br>
+    <label for="subject">Тема сообщения</label><br>
+    <input type="text" id="subject" name="subject"><br>
+    <label for="content">Письмо</label><br>
+    <textarea id="content" name="content"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p></p>
+  <h2>Помощь</h2>
+  <a href="{{ url_for('list_users') }}">  <button>Открыть базу данных</button></a>
+  <p></p>
+  <p></p>
+  <h2>Памятка отправки уведомлений пользователям через терминал(если не работает UI): </h2>
+  <p>-Открыть терминал</p>
+  <p>Ввести команду:<br>curl -X POST http://127.0.0.1:5000/send_notification -H "Content-Type: application/json" -d '{"email": <b>Почта, в кавычках</b>, "subject": <b>Название письма, в кавычках</b>, "message": <b>Письмо, в кавычках</b>}'</p>
+  <p></p>
+  <a href="{{ url_for('index') }}">  <button>Домой</button></a>
+{% endblock %}

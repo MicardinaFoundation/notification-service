@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>E-Mail</th>
+                <th>Phone Number</th>
+                <th>MB</th>
+                <th>PB</th>
+            </tr>    
+        </thead>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.phone }}</td>
+            <td>{{ item.notify_via_email }}</td>
+            <td>{{ item.notify_via_sms }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+  <a href="{{ url_for('index') }}">  <button>Домой</button></a>
+{% endblock %}
